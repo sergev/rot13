@@ -28,6 +28,7 @@ add_library(
   SpookyTest.cpp
   Stats.cpp
   SuperFastHash.cpp
+  rot13.cpp
   Types.cpp
   PMurHash.c
 )

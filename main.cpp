@@ -58,6 +58,7 @@ HashInfo g_hashes[] =
   { SuperFastHash,        32, 0x980ACD1D, "superfast",   "Paul Hsieh's SuperFastHash" },
   { MurmurOAAT_test,      32, 0x5363BD98, "MurmurOAAT",  "Murmur one-at-a-time" },
   { Crap8_test,           32, 0x743E97A1, "Crap8",       "Crap8" },
+  { rot13,                32, 0xF74405A1, "rot13",       "Serge Vakulenko's rot13" },
 
   { CityHash64_test,      64, 0x25A20825, "City64",      "Google CityHash64WithSeed" },
   { CityHash128_test,    128, 0x6531F54E, "City128",     "Google CityHash128WithSeed" },
@@ -549,11 +550,12 @@ void testHash ( const char * name )
 
 int main ( int argc, char ** argv )
 {
-  const char * hashToTest = "murmur3a";
+  const char * hashToTest = "rot13";
+  setlinebuf(stdout);
 
   if(argc < 2)
   {
-    printf("(No test hash given on command line, testing Murmur3_x86_32.)\n");
+    printf("(No test hash given on command line, testing rot13.)\n");
   }
   else
   {

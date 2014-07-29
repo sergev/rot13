@@ -36,6 +36,7 @@ void MurmurOAAT_test       ( const void * key, int len, uint32_t seed, void * ou
 void Crap8_test            ( const void * key, int len, uint32_t seed, void * out );
 void CityHash128_test      ( const void * key, int len, uint32_t seed, void * out );
 void CityHash64_test       ( const void * key, int len, uint32_t seed, void * out );
+void rot13                 ( const void * key, int len, uint32_t seed, void * out );
 
 void SpookyHash32_test     ( const void * key, int len, uint32_t seed, void * out );
 void SpookyHash64_test     ( const void * key, int len, uint32_t seed, void * out );
